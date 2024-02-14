@@ -1,4 +1,8 @@
-let a = 7
+const a = 7
+let count = 0
+document.write('Multiplication table by number 7: <br>')
 for (let b = 1; b <= 10; b++) {
-    document.write(a * b, "<br>")
+    let result = a * b
+    count += 1
+    document.write(count + ") " + a + " * " + b + " = " + result + "<br>")
 }
