@@ -1,17 +1,3 @@
-/*
-+0) prepare data
-+1) show all products with prices
-+2) show prompt with request to enter product number (validation)
-+3) show prompt with request to enter product amount (validation)
-+4) calculate price
-+5) check if discount available
-+6) if so - calculate discount
-+7) then show final price
-
-*/
-
-
-// 1
 let productNumber;
 let productAmount;
 let productToBuy;
@@ -24,7 +10,6 @@ function showProducts() {
     }
 }
 
-// 2
 function customerProductNumber() {
     do {
         productNumber = parseInt(prompt('Enter product number to purchase'));
@@ -33,14 +18,12 @@ function customerProductNumber() {
     return productNumber
 }
 
-// 4
 function getProductData(productNumber) {
     productToBuy = products[productNumber - 1];
     console.log(productToBuy);
     return productToBuy
 }
 
-// 3
 function getProductAmount(productToBuy) {
     do {
         productAmount = parseInt(prompt('Enter amount of products you wanna buy').trim());
@@ -64,9 +47,7 @@ function customerDiscount(userInvoice) {
     return discount
 }
 
-// 5
 function customerDiscountPrice(productAmount, discount, productToBuy) {
-    // 6
     const finalPrice = productAmount * productToBuy.price * discount;
     console.log(finalPrice);
     if (discount === 1) {
