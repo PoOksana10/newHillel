@@ -1,0 +1,9 @@
+table, td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+td {
+   padding: 7px;
+    text-align: center;
+    font-family: Georgia, serif;
+}
