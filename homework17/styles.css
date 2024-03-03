@@ -1,0 +1,20 @@
+#demo {
+    float: left;
+    margin: 13px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+#text_1 {
+    width: 300px;
+    margin: auto;
+    border: 1px solid #712c2c;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+#label_1 {
+    margin: auto;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
