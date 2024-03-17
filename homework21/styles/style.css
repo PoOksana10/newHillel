@@ -1,0 +1,18 @@
+#wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+#wrapper > div {
+    border: 1px solid black;
+    min-height: 100px;
+    min-width: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+.errorAlert1,.errorAlert2, .errorAlert3, .errorAlert4  {
+    color: red;
+}
