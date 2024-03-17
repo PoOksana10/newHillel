@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Shop</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <div id="categories"></div>
+    <div id="products"></div>
+    <div id="product"></div>
+</div>
+<div id="info"></div>
+<form class='hidden' name="mainForm">
+    <p>
+        <input name="firstName" placeholder="First Name" type="text"/>
+        <span class="errorAlert1"></span>
+    </p>
+    <p>
+        <input name="lastName" placeholder="Last Name" type="text"/>
+        <span class="errorAlert2"></span>
+    </p>
+    <p>
+        <input name="middleName" placeholder="Middle Name" type="text"/>
+        <span class="errorAlert4"></span>
+    </p>
+    <p>Please select city of delivery</p>
+    <p>
+        <select class='cityList' id='cities' name="city">
+            <option></option>
+        </select>
+        <span class="errorAlert3"></span>
+    </p>
+    <p>Delivery to Nova Posta branch as per below</p>
+    <p><select class='mailBranch' id='novaPosta' name="postMail"></select></p>
+    <p>Select way of payment
+    <p><input checked name="payment" type="radio" value="onlinePayment"/> Online payment </p>
+    <p><input name="payment" type="radio" value="moneyTransfer"/> Nova Posta Money Transfer </p>
+    </p>
+    <p><input name="productName"  class="productName" readonly="readonly" type='text'></p>
+    <p><input name="productPrice" class='productPrice' readonly="readonly" type='number'></p>
+    <p>Choose amount of products below</p>
+    <p><input min="1" name="orderedNumber" type="number" value="1"></p>
+    <p><textarea name="comments" placeholder="Comments"></textarea></p>
+    <p><input class='formSubmit' id="btn" type="button" value="Confirm"/></p>
+</form>
+<script src="js/data.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
