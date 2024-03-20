@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Shop</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="productList" id="catalogue">
+    <input class="productCatalogue hidden" type="button" value="Catalogue of Products">
+</div>
+<div class="basket" id="userBasket">
+    <input class="userOrders hidden" type="button" value="My Orders">
+</div>
+<div id="info"></div>
+<div id="wrapper">
+    <div class='hidden' id="categories"></div>
+    <div class='hidden' id="products"></div>
+    <div class='hidden' id="product"></div>
+</div>
+
+<form class='hidden' name="mainForm">
+    <p>
+        <input name="firstName" placeholder="First Name" type="text"/>
+        <span class="errorAlert1"></span>
+    </p>
+    <p>
+        <input name="lastName" placeholder="Last Name" type="text"/>
+        <span class="errorAlert2"></span>
+    </p>
+    <p>
+        <input name="middleName" placeholder="Middle Name" type="text"/>
+        <span class="errorAlert4"></span>
+    </p>
+    <p>Please select city of delivery</p>
+    <p>
+        <select class='cityList' id='cities' name="city">
+            <option></option>
+        </select>
+        <span class="errorAlert3"></span>
+    </p>
+    <p>Delivery to Nova Posta branch as per below</p>
+    <p><select class='mailBranch' id='novaPosta' name="postMail"></select></p>
+    <p>Select way of payment
+    <p><input checked name="payment" type="radio" value="onlinePayment"/> Online payment </p>
+    <p><input name="payment" type="radio" value="moneyTransfer"/> Nova Posta Money Transfer </p>
+    </p>
+    <label for="wrapper3">Purchased products :</label>
+    <div id="wrapper3"></div>
+    <p><textarea id="comms" name="comments" placeholder="Comments"></textarea></p>
+    <p><input class='formSubmit' id="btn" type="button" value="Confirm"/></p>
+</form>
+
+
+<div class="container">
+    <form class='registration' id="regUser" name="registrationForm">
+        <p>
+            <label for="fn">Please enter your name</label>
+            <input id="fn" name="firstName" placeholder="First Name" type="text"/>
+            <span class="errorAlert1"></span>
+        </p>
+        <p>
+            <label for="ln">Please enter your last name</label>
+            <input id="ln" name="lastName" placeholder="Last Name" type="text"/>
+            <span class="errorAlert2"></span>
+        </p>
+        <p>
+            <label for="dob">Please input your date of birth</label>
+            <input id='dob' name="birthDate" type="date"/>
+            <span class="errorAlert3"></span>
+        </p>
+        <p>Please select gender</p>
+        <p>
+            <input checked name="gender" type="radio" value="M"> "Male"
+        </p>
+        <p>
+            <input name="userGender" type="radio" value="F"> "Female"
+        </p>
+        <p>
+            <label for="userCity">Please select your city from drop down list</label>
+            <select class='cityList' id='userCity' name="userCity">
+                <option></option>
+            </select>
+            <span class="errorAlert4"></span>
+        </p>
+        <p>Please input languages that you know:</p>
+        <p>
+            <input checked name="userLanguages" type="checkbox" value="en"> "English"
+        </p>
+        <p>
+            <input name="userLanguages" type="checkbox" value="ua"> "Ukrainian"
+        </p>
+        <p>
+            <input name="userLanguages" type="checkbox" value="ru"> "Russian"
+        </p>
+        <p>
+            <input name="userLanguages" type="checkbox" value="de"> "Deutsch"
+        </p>
+        <p>
+            <label for="userEmail">Enter your email</label>
+            <input id="userEmail" name="userEmail" type="email">
+        </p>
+
+
+        <p>Please input the address in below window</p>
+        <p><textarea name="userAddress"></textarea></p>
+        <p>
+            <label for="userLogin">Please input your LOGIN</label>
+            <input id="userLogin" name="userLogin" type="text">
+        </p>
+        <p>
+            <label for="userPass">Please input your PASSWORD</label>
+            <input id="userPass" name="userPass" type="password">
+        </p>
+        <p><input class='regFormSubmit' id="regSubmit" type="button" value="Register"/></p>
+    </form>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
