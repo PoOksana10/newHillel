@@ -1,0 +1,67 @@
+#wrapper {
+    display: flex;
+
+}
+
+#wrapper > div {
+    min-height: 100px;
+    min-width: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+.errorAlert1,.errorAlert2, .errorAlert3, .errorAlert4, #error, .errorAlert  {
+    color: red;
+}
+
+.container {
+    border-style: double;
+    text-align: center;
+    padding: 10px;
+    margin: 10% 25%;;
+    background-color: antiquewhite;
+    font-family: 'Copperplate', fantasy;
+}
+
+.container2 {
+    border-style: double;
+    text-align: center;
+    padding: 10px;
+    background-color: antiquewhite;
+    font-family: 'Copperplate', fantasy;
+}
+
+.logOut {
+    float: right;
+    margin: 25px;
+    padding: 10px;
+    width: 210px;
+    font-family: 'Copperplate', fantasy;
+    font-size: 16px;
+}
+
+body {
+    background-color: gray;
+}
+
+#regLink, #logLink {
+    color: blue;
+}
+
+#qtyToOrder {
+    width: 15px;
+}
+
+.orderQty {
+    width: 35px;
+}
+
+.productCatalogue, .confirmation, .backToOrder, .formSubmit, .userOrders {
+    margin: 25px;
+    padding: 10px;
+    width: 210px;
+    font-family: 'Copperplate', fantasy;
+    font-size: 16px;
+}
