@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Login Shop Online</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="info"></div>
+    <div class="container" id="regContainer">
+        <p>
+        <h1>REGISTRATION FORM</h1></p>
+        <form class='registration' id="regUser" name="registrationForm">
+            <p>
+                <label for="fn">Please enter your name</label>
+                <input id="fn" name="firstName" placeholder="First Name" type="text"/>
+                <span class="errorAlert"></span>
+            </p>
+            <p>
+                <label for="ln">Please enter your last name</label>
+                <input id="ln" name="lastName" placeholder="Last Name" type="text"/>
+                <span class="errorAlert"></span>
+            </p>
+            <p>
+                <label for="dob">Please input your date of birth</label>
+                <input id='dob' name="birthDate" type="date"/>
+                <span class="errorAlert"></span>
+            </p>
+            <p>Please select gender</p>
+            <p>
+                <input checked name="gender" type="radio" value="M"> "Male"
+            </p>
+            <p>
+                <input name="userGender" type="radio" value="F"> "Female"
+            </p>
+            <p>
+                <label for="userCity">Please select your city from drop down list</label>
+                <select class='cityList' id='userCity' name="userCity">
+                    <option></option>
+                </select>
+            </p>
+            <p>Please input languages that you know:</p>
+            <p>
+                <input checked name="userLanguages" type="checkbox" value="en"> "English"
+            </p>
+            <p>
+                <input name="userLanguages" type="checkbox" value="ua"> "Ukrainian"
+            </p>
+            <p>
+                <input name="userLanguages" type="checkbox" value="ru"> "Russian"
+            </p>
+            <p>
+                <input name="userLanguages" type="checkbox" value="de"> "Deutsch"
+            </p>
+            <p>
+                <label for="userEmail">Enter your email</label>
+                <input id="userEmail" name="userEmail" type="email">
+                <span class="errorAlert"></span>
+            </p>
+            <p>Please input the address in below window</p>
+            <p><textarea name="userAddress"></textarea></p>
+            <p>
+                <label for="userLogin">Please input your LOGIN</label>
+                <input id="userLogin" name="userLogin" type="text">
+                <span class="errorAlert"></span>
+            </p>
+            <p>
+                <label for="userPass">Please input your PASSWORD</label>
+                <input id="userPass" name="userPass" type="password">
+                <span class="errorAlert"></span>
+            </p>
+            <p><input class='regFormSubmit' id="regSubmit" type="button" value="Register"/></p>
+            <p>
+                Press <b id="logLink">here</b> to login!
+            </p>
+        </form>
+    </div>
+
+    <div class="container" id="logContainer">
+        <p>
+        <h1>LOGIN FORM</h1></p>
+        <form id="loginForm" name="loginForm">
+            <div id="error"></div>
+            <p>
+                <label for="userName">Please input your LOGIN</label>
+                <input id="userName" name="userName" type="text">
+            </p>
+            <p>
+                <label for="userPassword">Please input your PASSWORD</label>
+                <input id="userPassword" name="userPassword" type="password">
+            </p>
+            <p><input class='loginUser' id="logUser" type="button" value="Login"/></p>
+            <p>
+                Don`t have account? Press <b id="regLink">here</b> to register!
+            </p>
+        </form>
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/loginFunctions.js"></script>
+    <script src="js/loginApp.js"></script>
+
+</body>
+</html>

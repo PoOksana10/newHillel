@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Shop Online - Basket</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="infoBasket">
+</div>
+<div id="info">
+</div>
+<div class="mainF hidden" id="mainF">
+    <form name="mainForm">
+        <p>
+            <input name="firstName" placeholder="First Name" type="text"/>
+            <span class="errorAlert1"></span>
+        </p>
+        <p>
+            <input name="lastName" placeholder="Last Name" type="text"/>
+            <span class="errorAlert2"></span>
+        </p>
+        <p>
+            <input name="middleName" placeholder="Middle Name" type="text"/>
+            <span class="errorAlert4"></span>
+        </p>
+        <p>Please select city of delivery</p>
+        <p>
+            <select class='cityList' id='cities' name="city">
+                <option></option>
+            </select>
+            <span class="errorAlert3"></span>
+        </p>
+        <p>Delivery to Nova Posta branch as per below</p>
+        <p>
+            <select class='mailBranch' id='novaPosta' name="postMail"></select>
+        </p>
+        <p>Select way of payment
+            <p><input checked name="payment" type="radio" value="onlinePayment"/> Online payment </p>
+            <p><input name="payment" type="radio" value="moneyTransfer"/> Nova Posta Money Transfer </p>
+        </p>
+        <label for="wrapper3">Purchased products :</label>
+        <div id="wrapper3"></div>
+        <p><textarea id="comms" name="comments" placeholder="Comments"></textarea></p>
+        <p>
+            <input class='formSubmit' id="btn" type="button" value="Confirm"/>
+            <input class='backToOrder' id="btnBack" type="button" value="Back to Orders"/>
+        </p>
+    </form>
+</div>
+
+
+<script src="js/data.js"></script>
+<script src="js/basketFunctions.js"></script>
+<script src="js/basketApp.js"></script>
+
+</body>
+</html>
