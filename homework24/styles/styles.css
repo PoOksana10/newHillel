@@ -1,0 +1,49 @@
+.hidden {
+  display: none;
+}
+
+.user_row {
+  display: flex;
+  width: 700px;
+  gap: 10px;
+  margin: 10px;
+  vertical-align: center;
+}
+
+.user_row input {
+  margin-right: 2px;
+}
+
+#b {
+  color: blue;
+
+}
+.viewUser {
+  font-family: 'Copperplate', fantasy;
+}
+
+.error {
+  color: red;
+}
+input[data-action='delete'] {
+  background-color: red;
+  width: 70px;
+  padding: 5px;
+
+  color: aliceblue;
+}
+
+input[data-action='edit'] {
+  background-color: lightslategray;
+  width: 70px;
+  padding: 5px;
+  color: aliceblue;
+}
+
+input[data-action='view'] {
+  background-color: antiquewhite;
+  width: 70px;
+  padding: 5px;
+  color: black;
+}
+
