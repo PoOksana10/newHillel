@@ -1,0 +1,52 @@
+
+body {
+    background-color: black;
+    font-size: 20px;
+}
+
+.input-group {
+    text-align: center;
+    margin: 10% auto;
+    width: 500px;
+    border: 5px solid blanchedalmond;
+    padding: 10px 35px 35px 35px;
+    position: relative;
+    background: darkgray;
+    color: antiquewhite;
+    justify-content: space-between;
+    border-radius: 15%;
+    min-width: 500px;
+
+}
+
+.input-group-text {
+    padding: 15px;
+    margin: 15px;
+}
+
+.myCar {
+    background-color: black;
+    width: 250px;
+    color: bisque;
+    opacity: 50%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.myCar:hover {
+    background-color: black;
+    width: 250px;
+    color: bisque;
+    opacity: 1000%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.error {
+    border-color: red;
+    color: red;
+}
+
+.isHidden {
+    display: none;
+}
